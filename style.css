@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background: rgb(65, 121, 186);
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgb(9, 114, 188);
+  border-radius: 15px;
+
+
+}
+header nav h1{
+  color: white;
+  font-size: 3rem;
+
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  
+}
+nav ul li .download{
+  color: black;
+  background-color: yellow;
+  padding: 20px;
+  border-radius: 20px;
+  transition: .3s;
+}
+nav ul li .download:hover{
+  
+  background-color: rgb(255, 255, 123);
+
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 16pxpx;
+  transition: .3s;
+}
+
+nav ul li a:hover{
+  color:rgb(0, 0, 0);
+}
+
+/* Profile */
+#profile {
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;  
+}
+.profile-container{
+  width: 90%;
+}
+.profile-container h1{
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+}
+.profile-container p{
+  margin-right: 30px;
+  font-size: 16px;
+}
+.profilePic img{
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: .3s;
+    cursor: pointer;
+}
+/* education */
+#education{
+  height: 90vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+.education-container h1{
+  color: #fff;
+  font-size: 3rem;
+}
+.education-container h2{
+  text-align: center;
+  font-size: 2rem;
+}
+.education-container p{
+  text-align: center;
+}
+
+.education-container div {
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/*TRAINING*/
+#trainings {
+   height: 90vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
+}
+.training-container h1{
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+.training-container div{
+  text-align: center;
+  font-size: 2rem; 
+  margin-top: 30px;
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+}
+.training-container div h2{
+  font-size: 2rem;
+}
+.training-container div p{
+  font-size: 20px;
+}
+
+/*PROJECTS*/
+#projects{
+  height: 90vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%
+}
+
+.project-container h1{
+  font-size: 3rem;
+  color: white;
+  
+}
+.project-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .project-card {
+      position: relative;
+      width: 220px;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .project-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .project-card:hover .overlay {
+      opacity: 1;
+    }
+
+/* Job Experience */
+#experience{
+  height: 90vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%
+}
+  
+.experience-container h1{
+    color: #fff;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+.experience-container div{
+    text-align: center;
+  font-size: 2rem; 
+  margin-top: 30px;
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+}
+.experience-container div h2{
+  font-size: 2rem;
+}
+.experience-container div p{
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Contacts */
+
+#contact {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#contact h1 {
+  color: yellow;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#contact h2 a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+#contact p {
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+input::placeholder, textarea::placeholder{
+  color: white;
+}
+
+.input-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  background: transparent;
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  background: transparent;
+  outline: none;
+  resize: vertical;
+}
+
+button {
+  align-self: flex-end;
+  padding: 10px 30px;
+  border: 2px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+  font-size: 1em;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.social-icons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a iconify-icon {
+  font-size: 50px;
+  color: #ffffff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover iconify-icon {
+  transform: scale(1.2);
+  color: #0d2ebd;
+}
+
+  
+  
+  
+  
+  
+  
+  
+/*
+  img{
+    width: 200px;
+    border-radius: 100px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 100px;
+  }
+  
+  .profile-section{
+    text-align: left;
+    margin: 0;
+    
+  }
+
+header nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    section {
+      padding: 100px 20px;
+      margin-top: 60px;
+    }
+ .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      justify-content: center;
+      align-items: center;
+    }
+ .modal-content {
+      background: white;
+      padding: 20px;
+      border-radius: 5px;
+      max-width: 400px;
+      width: 80%;
+    }
+ .project-card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+ .slider {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+ .slide {
+      display: inline-block;
+      width: 100%;
+      transition: transform 0.5s;
+    }
+  .form-error {
+      color: red;
+      font-size: 0.9em;
+      display: none;
+    } */
