@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>StudentRegistrationForm </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <div class="container">
+    <h2>Student Registration Form</h2>
+    <form id="registrationForm" novalidate>
+      <!-- Personal Info -->
+      <div class="form-group">
+        <label for="fullName">Full Name *</label>
+        <input type="text" id="fullName" name="fullName" required>
+        <small class="error"></small>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="e.g. 09123456789" required>
+        <small class="error"></small>
+      </div>
+      
+      <!-- Login Info -->
+      <div class="form-group">
+        <label for="password">Password *</label>
+        <input type="password" id="password" name="password" minlength="6" required>
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password *</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <small class="error"></small>
+      </div>
+      
+      <!-- Course Selection -->
+<div class="form-group">
+  <label for="course">Course *</label>
+  <select id="course" name="course" required>
+    <option value="">-- Select Course --</option>
+    <option value="DCET">Diploma in Computer Engineering Technology</option>
+    <option value="DEET">Diploma in Electrical Engineering Technology</option>
+    <option value="DEEET">Diploma in Electronics Engineering Technology</option>
+    <option value="DMET">Diploma in Mechanical Engineering Technology</option>
+  </select>
+  <small class="error"></small>
+</div>
+
+<!-- Gender -->
+      <div class="form-group">
+        <label>Gender *</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="Male" required> Male</label>
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+        </div>
+        <small class="error"></small>
+      </div>
+
+      <!-- Date of Birth -->
+      <div class="form-group">
+        <label for="dob">Date of Birth *</label>
+        <input type="date" id="dob" name="dob" required>
+        <small class="error"></small>
+      </div>
+      
+      <!-- Address -->
+      <div class="form-group">
+        <label for="address">Address *</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+        <small class="error"></small>
+      </div>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+<body>
+  
+  <script src="main.js"></script>
+</body>
+</html>
